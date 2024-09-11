@@ -1,0 +1,15 @@
+{
+	"name": "tp_todolist",
+	"version": "1.0.0",
+	"main": "app.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "ISC",
+	"description": "TP todolist nodeJS & express & ejs",
+	"dependencies": {
+		"ejs": "^3.1.10",
+		"express": "^4.20.0"
+	}
+}
