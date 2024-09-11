@@ -10,6 +10,7 @@
 	"description": "TP todolist nodeJS & express & ejs",
 	"dependencies": {
 		"ejs": "^3.1.10",
-		"express": "^4.20.0"
+		"express": "^4.20.0",
+		"express-session": "^1.18.0"
 	}
 }

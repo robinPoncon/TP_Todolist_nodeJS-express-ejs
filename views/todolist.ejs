@@ -5,5 +5,27 @@
 	</head>
 	<body>
 		<h1>Todo List</h1>
+
+		<form method="POST" action="/task">
+			<input type="text" placeholder="nouvelle tâche" name="task" autofocus required>
+			<button type="submit">Ajouter</button>
+		</form>
+
+		<h3>Tâches</h3>
+		<ul>
+			<% tasks.forEach((task, index) => { %> 
+				<li>
+					<% if (task.done) { %>
+						<s>
+							<%= task.title %>
+						</s> 
+						| <a href="/task/<%= index %>/delete">Supprimer</a>
+					<% } else { %>
+						<%= task.title %> 
+						| <a href="/task/<%= index %>/done">Terminé</a>
+					<% } %>
+				</li>
+			<% }) %>
+		</ul>
 	</body>
 </html>
